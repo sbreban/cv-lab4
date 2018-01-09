@@ -29,10 +29,11 @@ for imagePath in glob.glob("images/*.png"):
     index[filename] = hist
 
 OPENCV_METHODS = (
-    ("Correlation", cv2.HISTCMP_CORREL),
-    ("Chi-Squared", cv2.HISTCMP_CHISQR),
-    ("Intersection", cv2.HISTCMP_INTERSECT),
-    ("Hellinger", cv2.HISTCMP_BHATTACHARYYA))
+    # ("Correlation", cv2.HISTCMP_CORREL),
+    # ("Chi-Squared", cv2.HISTCMP_CHISQR),
+    # ("Intersection", cv2.HISTCMP_INTERSECT),
+    ("Hellinger", cv2.HISTCMP_BHATTACHARYYA),
+)
 
 for (methodName, method) in OPENCV_METHODS:
     results = {}
